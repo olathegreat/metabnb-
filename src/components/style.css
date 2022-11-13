@@ -1,0 +1,679 @@
+@font-face {
+    font-family: monument;
+    src: url(/public/MonumentExtended-Regular.otf);
+}
+@font-face {
+    font-family: monument-bold;
+    src: url(/public/MonumentExtended-Ultrabold.otf);
+}
+
+
+/* app */
+
+
+
+/* navbar */
+.nav{
+    position: relative;
+    
+}
+.navbar-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 100px;
+    align-items: center;
+    flex: 2;
+}
+.navbar-wrapper a{
+    margin-left: 30px;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.navbar-wrapper img{
+    width: 160px;
+    
+}
+.navbar-wrapper button{
+    color: white;
+    background-color: #a02279;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all ease;
+    cursor: pointer;
+
+
+
+}
+.mobile-list button{
+    color: white;
+    background-color: #a02279;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all ease;
+    cursor: pointer;
+
+
+}
+.mobile-list a{
+    margin-bottom: 10px;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 600;
+
+}
+.navbar-wrapper button:hover{
+    background-color: #a02278ac;
+}
+.nav .modal-toggler{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.mobile{
+    display: none;
+}
+
+
+
+
+/* stripe */
+.stripe ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 90%;
+    padding-left: 60px;
+
+
+
+}
+.stripe li{
+    list-style: none;
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 1.2em;
+}
+.stripe li:last-child{
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;    
+    padding: 10px;
+}
+.stripe li:last-child img{
+    width: 20px;
+}
+.stripe li span{
+    margin-right: 10px;
+}
+
+
+/* footer */
+.footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+    padding-right: 200px;
+    
+}
+.footer li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+
+}
+.footer ul{
+    padding: 0;
+    margin: 0;
+}
+.footer img{
+    width: 160px;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+.footer a:hover{
+    color: #a02279;
+}
+.footer h3{
+    margin-bottom: 20px;
+    font-weight: 900;
+} 
+.footer-first{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .icons{
+    display: flex;
+    margin-bottom: 30px;
+}
+.footer span{
+    font-size: 1.3em;
+}
+.footer i{
+    font-size: 1.5em;
+    margin-right: 20px;
+}
+
+
+
+
+/* modal */
+
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.488);
+    transition: display 500ms ease;
+    z-index: 999;
+}
+
+.modal-wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 500px;
+    border-radius: 20px;
+
+}
+
+.modal .head{
+    padding: 20px;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.modal hr{
+    width: 98%;
+}
+.modal .bottom{
+    padding: 20px;
+}
+.modal img{
+    width: 30px;
+}
+.modal .select-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal .left{
+    display: flex;
+    align-items: center;
+}
+.modal .left h2{
+    margin: 0;
+    font-size: 1em;
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+.modal .select{
+    border: 1px solid gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding:10px  20px;
+    background-color: rgba(128, 128, 128, 0.048);
+    cursor: pointer;
+    transition:all 500ms  ease;
+}
+.modal .select:hover{
+    background-color: rgba(128, 128, 128, 0.205);
+}
+.select-wrapper i{
+    font-size: 1.5em;
+}
+.modal .cancel{
+    font-size: 1.5em;
+}
+.modal h5{
+    margin-top: 0;
+}
+.modal .cancel{
+  cursor: pointer;
+}
+
+
+/* home page */
+.home-jumbotron{
+    display: flex;
+    padding: 60px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    flex-wrap: wrap;
+}
+.home-jumbotron .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    
+    margin-right: 50px;
+
+}
+.home-jumbotron .heading{
+    font-size: 3em;
+    font-weight: 600;
+    line-height: normal;
+}
+.home-jumbotron .left p{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.5em;
+
+}
+.home-jumbotron button{
+    background-color: #a02279;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 20px;
+    text-align: center;
+    transition: all 1s ease;
+    flex: 1;
+}
+.home-jumbotron .button{
+    width: 100%;
+    display: flex;
+    font-size: 1.2em;
+    
+}
+.home-jumbotron button:hover{
+    background-color: #a02278c9;
+}
+.home-jumbotron input{
+    padding: 20px 10px;
+    border: 1px solid gray;
+    border-radius: 5px 0 0 5px;
+    flex: 3;
+
+}
+.home-jumbotron input:focus{
+   outline:none;
+
+}
+
+.home-jumbotron .right{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.home-jumbotron .right .first{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+.home-jumbotron .right .second{
+    display: flex;
+    flex-direction: column;
+
+}
+.home-jumbotron .right img{
+    
+    object-fit: cover;
+    width: 100%;
+}
+.purple{
+    color: #a02279;
+    
+}
+
+
+/* logostripe */
+.logo-stripe{
+    background-color: #a02279;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+
+.logo-stripe  img{
+    width: auto;
+    
+}
+
+
+/* products */
+.products h1{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+ .card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.card{
+   padding: 10px;
+   border: 1px solid rgba(128, 128, 128, 0.409);
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   margin-right: 20px;
+   margin-bottom: 20px;
+   width: 20%;
+}
+.card .top{
+    position: relative;
+    width: 100%;
+}
+.card .top i{
+    position: absolute;
+    font-size: 2em;
+    cursor: pointer;
+    right: 20px;
+    top: 20px;
+    color: white;
+}
+.card .bottom-first, .card .bottom-second{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.card .bottom i{
+    color: #a02279;
+    margin-right: 5px;
+
+    
+}
+.card .bottom .price{
+    font-weight: 900;
+}
+.card .review{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.card img{
+    width: inherit;
+    object-fit: cover;
+}
+
+
+/* lower jumbotron */
+
+.lower-jumbotron{
+    background: linear-gradient(to top, #a02279, #a02278e0);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px;
+    padding-right: 0;
+    margin-top: 60px;
+    justify-content: center;
+}
+.lower-jumbotron-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    padding-right: 100px;
+}
+.lower-jumbotron-left button{
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 5px;
+    border: none;
+    transition: all 1s ease;
+}
+.lower-jumbotron-left button:hover{
+    background-color: #a02279;
+    color: white;
+    border: 1px solid white;
+}
+.lower-jumbotron-left h1{
+    font-size: 2.5em;
+    
+}
+.lower-jumbotron-right{
+    
+    padding-right: 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.lower-jumbotron-right img{
+    width: 100%;
+    object-fit: cover;
+}
+.lower-jumbotron-left p{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom:30px;
+    font-size: 1.2em;
+}
+
+.footer-nft{
+    margin-top: 50px;
+}
+
+.stripe .mobile{
+    display: none;
+}
+
+/* tab responsiveness */
+@media screen and (max-width:769px) {
+    .card{
+        width: 40%;
+    }
+    .nav{
+        padding: 30px 10px;
+        width: 100%;
+        font-size:.5em;
+    }
+    .nav img{
+        width: 100px;
+        
+    }
+    .navbar-wrapper{
+        width: auto;
+        padding: 0;
+    }
+    
+    .lower-jumbotron-left p{
+        font-size: .8em;
+    }
+    .lower-jumbotron-left h1{
+        font-size: 1.5em;
+    }
+    .footer{
+        padding: 20px;
+        padding-right: 50px;
+
+    }
+    .footer img{
+        width: 100px;
+    }
+    .footer-first{
+        height: inherit;
+        justify-content: space-evenly;
+
+    }
+    .logo-stripe img{
+        width: 100px;
+        object-fit: cover;
+    }
+    .navbar {
+        justify-content: center;
+    }
+    .footer .second{
+        margin: 10px;
+    }
+    .home-jumbotron .heading{
+        font-size: 2em;
+    }
+    .home-jumbotron p{
+        font-size: 1em;
+        margin-top: 10px;
+    }
+    .home-jumbotron{
+        padding:0 30px;
+        margin-bottom: 30px;
+    }
+    .home-jumbotron .left{
+        margin-right: 10px;
+    }
+    
+    .lower-jumbotron{
+        padding: 20px;
+    }
+    }
+    @media screen and (max-width:480px) {
+        .home-jumbotron{
+            margin-bottom: 20px;
+            flex-direction: column;
+            margin-right: 20px;
+        }
+        .home-jumbotron .left{
+            margin-right: 0;
+            
+        }
+        .home-jumbotron .left p{
+            margin: 15px 0;
+            margin-bottom: 30px;
+        }
+        .home-jumbotron img{
+            width: 100px;
+        }
+        .card{
+            width: 90%;
+        }
+        .lower-jumbotron{
+            padding:  20px 0;
+        }
+        .lower-jumbotron-left, .lower-jumbotron-right{
+            margin-right: 0;
+        }
+        .footer{
+            font-size: 1em;
+            width: inherit;
+            flex-wrap: wrap;
+        }
+        .footer li{
+            margin-bottom: 5px;
+        }
+        .footer h3{
+            margin-bottom: 10px;
+        }
+        .footer .icons{
+            margin-bottom: 20px;
+        }
+        .footer span{
+            font-size: 1em;
+        }
+        .no-mobile{
+            display: none;
+        }
+        .mobile{
+            display: flex;
+            flex-direction: column;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .mobile i{
+            font-size: 3em;
+        }
+        .mobile-list{
+            display: flex;
+            flex-direction: column;
+            font-size: 1em;
+        }
+        .modal-wrapper{
+            width: 300px;
+        }
+        .modal img{
+            width: 10px;
+        }
+        .lower-jumbotron-right{
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+        .lower-jumbotron-left{
+            width: 100%;
+            align-items: center;
+            padding: 0;
+        }
+        .lower-jumbotron-left p{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .lower-jumbotron{
+            padding: 30px;
+        }
+        .logo-stripe img{
+            width: 50px;
+        }
+        .footer .mobile i{
+            font-size: 1.2em;
+            margin-right: 3px;
+        }
+        .footer-first{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 0;
+            margin-top: 40px;
+        }
+        .footer .no-mobile{
+            display: none;
+        }
+        .footer .lefty{
+            display: flex;
+        }
+        .lefty .icons{
+            margin-left: 15px;
+            margin-right: 15px;
+            align-items: center;
+            
+        }
+        .stripe .mobile{
+            display: block;
+
+        }
+        
+        .stripe .no-mobile{
+            display: none;
+        }
+        .stripe select{
+            appearance: none;
+            padding-right: 15px;
+            background-image: url("setting-5.png");
+            background-repeat: no-repeat;
+            background-position: calc(100% - 3px) center;
+            background-size: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 1em;
+        }
+    }
+    

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Modal from './Modal';
+import {Link} from "react-router-dom"
 import "./style.css";
 
 const Navbar = () => {
@@ -8,10 +9,16 @@ const Navbar = () => {
 
     const toggler = (checker) =>{
         setDisplay(checker);
+        
+        
     }
      
     const buttonClick = () =>{
         setDisplay(true);
+        
+        
+        
+        
     }
   return (
     <div className='nav'>
@@ -21,10 +28,10 @@ const Navbar = () => {
         <div className='navbar-wrapper'>
             <img src='Metabnb for frontend/metalogobgwhite.png' alt='logo'></img>
             <div className='nav-center'>
-                <a href=''>Home</a>
-                <a href=''>Place to stay</a>
-                <a href=''>NFTs</a>
-                <a href=''>Community</a>
+                <Link to="/">Home</Link>
+                <Link to="/nfts">Place to stay</Link>
+                <Link to="/">NFTs</Link>
+                <Link to="/">Community</Link>
             </div>
             <button onClick={buttonClick}>Connect wallet</button>
 

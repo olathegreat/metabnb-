@@ -85,10 +85,11 @@
 .stripe ul{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     padding: 0;
     width: 90%;
-    padding-left: 60px;
+    padding-left: 100px;
 
 
 
@@ -98,6 +99,7 @@
     cursor: pointer;
     margin-right: 20px;
     font-size: 1.2em;
+    
 }
 .stripe li:last-child{
     display: flex;
@@ -111,6 +113,7 @@
 .stripe li span{
     margin-right: 10px;
 }
+
 
 
 /* footer */
@@ -127,7 +130,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-bottom: 20px;
+    margin-top: 20px;
 
 }
 .footer ul{
@@ -154,6 +157,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: inherit;
+}
+.footer .mobile{
+    display: none;
 }
 
 .footer .icons{
@@ -179,9 +186,11 @@
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.488);
+    background-color: rgba(0, 0, 0, 0.724);
     transition: display 500ms ease;
-    z-index: 999;
+    z-index: 9999;
+    offset: unset;
+    overflow: hidden;
 }
 
 .modal-wrapper{
@@ -190,6 +199,7 @@
     background-color: white;
     width: 500px;
     border-radius: 20px;
+    z-index: 9999;
 
 }
 
@@ -264,10 +274,10 @@
 .home-jumbotron .left{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex: 1;
     
-    margin-right: 50px;
+    margin-right: 200px;
 
 }
 .home-jumbotron .heading{
@@ -343,7 +353,7 @@
 .logo-stripe{
     background-color: #a02279;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 20px;
     width: 100%;
 }
@@ -380,6 +390,7 @@
 .card .top{
     position: relative;
     width: 100%;
+
 }
 .card .top i{
     position: absolute;
@@ -388,6 +399,7 @@
     right: 20px;
     top: 20px;
     color: white;
+    
 }
 .card .bottom-first, .card .bottom-second{
     display: flex;
@@ -412,6 +424,12 @@
 .card img{
     width: inherit;
     object-fit: cover;
+    opacity: .95;
+    transition: all 1s ease;
+}
+.card img:hover{
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 
@@ -543,6 +561,15 @@
     .lower-jumbotron{
         padding: 20px;
     }
+    .stripe .no-mobile{
+        padding-left:30px;
+    }
+    .stripe ul{
+        flex-wrap: wrap;
+    }
+    .stripe li{
+        margin-top: 20px;
+    }
     }
     @media screen and (max-width:480px) {
         .home-jumbotron{
@@ -646,6 +673,11 @@
         .footer .no-mobile{
             display: none;
         }
+        .footer .mobile{
+            display: flex;
+            justify-content: center;
+            margin-left: 30px;
+        }
         .footer .lefty{
             display: flex;
         }
@@ -676,4 +708,10 @@
             font-size: 1em;
         }
     }
+
     
+
+    /* products2 */
+    .products2 img{
+        z-index: -1;
+    }

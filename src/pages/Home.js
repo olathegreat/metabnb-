@@ -1,12 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Footer from '../components/Footer';
 import Homejumbotron from '../components/Homejumbotron';
 import Navbar from '../components/Navbar';
 import Products from '../components/Products';
 import "../components/style.css"
 const Home = () => {
+    const[modalChecker,setModalChecker] = useState(false);
+
+
+
   return (
-    <div className='homepage'>
+    <div className='homepage' style={{overflow: modalChecker && "hidden"}}>
         
            <Navbar/>
 
@@ -36,7 +40,7 @@ const Home = () => {
           
 
        </div>
-       <h1>Inspiration for your next adventure</h1>
+       
        <Products/>
 
        <div className='lower-jumbotron'>

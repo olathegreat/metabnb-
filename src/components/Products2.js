@@ -89,7 +89,7 @@ const Products2 = () => {
             marked:false,
         },
         {
-            id:8,
+            id:10,
             img:"Metabnb for frontend/imagecard8.png",
             name:"Desert King",
             price:"1MBT per night",
@@ -98,7 +98,7 @@ const Products2 = () => {
             marked:false,
         },
         {
-            id:8,
+            id:11,
             img:"Metabnb for frontend/imagecard8.png",
             name:"Desert King",
             price:"1MBT per night",
@@ -107,7 +107,7 @@ const Products2 = () => {
             marked:false,
         },
         {
-            id:8,
+            id:12,
             img:"Metabnb for frontend/imagecard8.png",
             name:"Desert King",
             price:"1MBT per night",
@@ -116,7 +116,7 @@ const Products2 = () => {
             marked:false,
         },
         {
-            id:8,
+            id:13,
             img:"Metabnb for frontend/imagecard8.png",
             name:"Desert King",
             price:"1MBT per night",
@@ -125,7 +125,7 @@ const Products2 = () => {
             marked:false,
         },
         {
-            id:8,
+            id:14,
             img:"Metabnb for frontend/imagecard8.png",
             name:"Desert King",
             price:"1MBT per night",
@@ -134,7 +134,7 @@ const Products2 = () => {
             marked:false,
         },
         {
-            id:8,
+            id:15,
             img:"Metabnb for frontend/imagecard8.png",
             name:"Desert King",
             price:"1MBT per night",
@@ -143,7 +143,7 @@ const Products2 = () => {
             marked:false,
         },
         {
-            id:8,
+            id:16,
             img:"Metabnb for frontend/imagecard8.png",
             name:"Desert King",
             price:"1MBT per night",
@@ -190,7 +190,7 @@ const Products2 = () => {
         </div>
     ))
   return (
-    <div className='products'>
+    <div className='products2'>
        
 
         <div className='card-wrapper'>

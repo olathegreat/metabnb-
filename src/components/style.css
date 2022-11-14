@@ -1,17 +1,24 @@
 @font-face {
-    font-family: monument;
-    src: url(/public/MonumentExtended-Regular.otf);
+    font-family: redroselight;
+    src: url(/public/red_rose/RedRose-Light.ttf);
 }
 @font-face {
-    font-family: monument-bold;
-    src: url(/public/MonumentExtended-Ultrabold.otf);
+    font-family: redroseregular;
+    src: url(/public/red_rose/RedRose-Regular.ttf);
+}
+
+@font-face {
+    font-family: redrosebold;
+    src: url(/public/red_rose/RedRose-Bold.ttf);
 }
 
 
 /* app */
 
 
-
+*{
+    font-family: redroseregular;
+}
 /* navbar */
 .nav{
     position: relative;
@@ -28,7 +35,7 @@
     margin-left: 30px;
     color: black;
     font-size: 1.2em;
-    font-weight: 600;
+    font-family: redroseregular;
 }
 .navbar-wrapper img{
     width: 160px;
@@ -131,6 +138,7 @@
     padding: 0;
     margin: 0;
     margin-top: 20px;
+    font-family: redroselight;
 
 }
 .footer ul{
@@ -281,14 +289,15 @@
 
 }
 .home-jumbotron .heading{
-    font-size: 3em;
-    font-weight: 600;
+    font-size: 2.5em;
+    font-family: redrosebold;
     line-height: normal;
 }
 .home-jumbotron .left p{
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 1.5em;
+    
 
 }
 .home-jumbotron button{
@@ -369,6 +378,7 @@
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
+    font-family: redrosebold;
 
 }
  .card-wrapper{
@@ -379,6 +389,7 @@
 }
 .card{
    padding: 10px;
+   font-family: redroselight;
    border: 1px solid rgba(128, 128, 128, 0.409);
    border-radius: 20px;
    display: flex;
@@ -415,7 +426,7 @@
     
 }
 .card .bottom .price{
-    font-weight: 900;
+    font-family: redrosebold;
 }
 .card .review{
     margin-left: 10px;
@@ -466,6 +477,7 @@
 }
 .lower-jumbotron-left h1{
     font-size: 2.5em;
+    font-family: redrosebold;
     
 }
 .lower-jumbotron-right{
@@ -485,6 +497,7 @@
     margin-top: 30px;
     margin-bottom:30px;
     font-size: 1.2em;
+    font-family: redroseregular;
 }
 
 .footer-nft{
@@ -715,3 +728,4 @@
     .products2 img{
         z-index: -1;
     }
+    

@@ -30,7 +30,7 @@ const Navbar = () => {
             <div className='nav-center'>
                 <Link to="/">Home</Link>
                 <Link to="/nfts">Place to stay</Link>
-                <Link to="/">NFTs</Link>
+                <Link to="/nfts">NFTs</Link>
                 <Link to="/">Community</Link>
             </div>
             <button onClick={buttonClick}>Connect wallet</button>

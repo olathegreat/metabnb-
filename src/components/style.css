@@ -292,9 +292,10 @@
 
 }
 .home-jumbotron .heading{
-    font-size: 2.5em;
-    font-family: redrosebold;
+    font-size: 2.8em;
+    font-family: redroseregular;
     line-height: normal;
+    
 }
 .home-jumbotron .left p{
     margin-top: 50px;

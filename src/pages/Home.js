@@ -57,7 +57,7 @@ const Home = () => {
             <button>Learn more</button>
           </div>
           <div className='lower-jumbotron-right'>
-            <img src='Metabnb for frontend/frame 59546-1.png'></img>
+            <img src='Metabnb for frontend/use1.png' alt="frame"></img>
 
           </div>
          

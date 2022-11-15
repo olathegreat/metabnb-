@@ -336,6 +336,7 @@
 }
 
 .home-jumbotron .right{
+    min-width:280px;
     display: flex;
     flex: 1;
     justify-content: center;
@@ -356,6 +357,16 @@
     object-fit: cover;
     width: 100%;
 }
+@media screen and (max-width:340px) {
+    .home-jumbotron{
+        padding:0;
+        max-width: auto;
+        margin-bottom: 30px;
+    }
+    .home-jumbotron .right img{
+        max-width:150px;
+    }
+}
 .purple{
     color: #a02279;
     
@@ -369,12 +380,10 @@
     justify-content: space-evenly;
     padding: 20px;
     width: 100%;
+    flex-wrap:wrap ;
 }
 
-.logo-stripe  img{
-    width: auto;
-    
-}
+
 
 
 /* products */
@@ -584,10 +593,12 @@
     .stripe ul{
         flex-wrap: wrap;
     }
+    
     .stripe li{
         margin-top: 20px;
     }
     }
+    
     @media screen and (max-width:480px) {
         .home-jumbotron{
             margin-bottom: 20px;

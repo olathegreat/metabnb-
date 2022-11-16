@@ -288,7 +288,8 @@
     justify-content: space-evenly;
     flex: 1;
     
-    margin-right: 200px;
+    align-items: baseline;
+    margin-right: 100px;
 
 }
 .home-jumbotron .heading{
@@ -357,16 +358,7 @@
     object-fit: cover;
     width: 100%;
 }
-@media screen and (max-width:340px) {
-    .home-jumbotron{
-        padding:0;
-        max-width: auto;
-        margin-bottom: 30px;
-    }
-    .home-jumbotron .right img{
-        max-width:150px;
-    }
-}
+
 .purple{
     color: #a02279;
     
@@ -519,6 +511,26 @@
 
 .stripe .mobile{
     display: none;
+}
+
+@media screen and (max-width:900px) {
+    .nav{
+        padding: 30px 100px;
+        width: 100%;
+        font-size:.5em;
+    }
+    .nav img{
+        width: 100px;
+        
+    }
+    .navbar-wrapper{
+        width: inherit;
+        padding: 0;
+    }
+    .home-jumbotron .left{
+        margin-right: 30px;
+    }
+    
 }
 
 /* tab responsiveness */
@@ -735,6 +747,28 @@
             padding: 20px;
             font-size: 1em;
         }
+    }
+
+    @media screen and (max-width:340px) {
+        .home-jumbotron{
+            padding:0;
+            width: inherit;
+            margin-bottom: 30px;
+        }
+        .home-jumbotron .right{
+            margin-bottom: 40px;
+        }
+        .home-jumbotron .button{
+            flex-wrap: wrap;
+        }
+    }
+    @media screen and(max-width:370px) {
+        .footer-first{
+            flex-direction: column;
+        }
+        
+
+        
     }
 
     
